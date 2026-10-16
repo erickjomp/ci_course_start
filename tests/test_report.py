@@ -1,6 +1,6 @@
 import numpy as np
 
-import src.ci_course as ci_course
+import ci_course
 
 
 def summaries():

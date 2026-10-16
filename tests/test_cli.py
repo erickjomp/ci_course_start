@@ -1,8 +1,8 @@
-import src.ci_course.cli
+import ci_course.cli
 
 
 def test_prints_a_summary(capsys):
-    assert src.ci_course.cli.main([]) == 0
+    assert ci_course.cli.main([]) == 0
 
     printed = capsys.readouterr().out
     assert "temperature_c" in printed
@@ -12,5 +12,5 @@ def test_prints_a_summary(capsys):
 def test_writes_a_report_to_a_file(tmp_path):
     out = tmp_path / "report.txt"
 
-    assert src.ci_course.cli.main(["--output", str(out)]) == 0
+    assert ci_course.cli.main(["--output", str(out)]) == 0
     assert out.exists()
