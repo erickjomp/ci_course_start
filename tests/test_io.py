@@ -1,6 +1,6 @@
 import numpy as np
 
-import ci_course
+import src.ci_course as ci_course
 
 
 def test_loads_every_column_of_the_sample_data():
